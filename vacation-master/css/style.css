@@ -2018,6 +2018,10 @@ pre code {
   }
 }
 
+.br {
+  border-radius: 5px;
+}
+
 @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
@@ -11061,7 +11065,7 @@ h5,
   border-radius: 5px;
 }
 
-.project-destination .text {
+. .project-destination .text {
   padding: 20px;
   position: relative;
   height: 320px;
