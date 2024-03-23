@@ -39,33 +39,36 @@
       {
         backgroundImg: "images/machu.jpg",
         nameOfCountry: "PERU",
-        price: "$5740",
+        price: "$5,740",
         dateTime: "June-15 to June-29th ",
-        Location: "Machu Pic-Chu",
+        Location: "MACHU PIC-CHU",
       },
       {
         backgroundImg: "images/gorilla.jpg",
         nameOfCountry: "UGANDA",
-        price: "$2090",
-        dateTime: "July-12th to July-17th ",
+        price: "$2,090",
+        dateTime: "July-12th to July-17th",
         Location: "GORILLA TRACKING",
       },
       {
         backgroundImg: "images/blanc.webp",
-        nameOfCountry: "France & Switzerland",
-        price: "$2170",
+        nameOfCountry: "FRANCE & SWITZERLAND",
+        price: "$2,170",
         dateTime: "31-July to August-5th ",
-        descriptionTitle:
-          "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
-        Location: "MOUNT TOUBKAL",
+        Location: "MOUNT BLANC",
+      },
+      {
+        backgroundImg: "images/portugal.avif",
+        nameOfCountry: "PORTUGAL",
+        price: "$3,100",
+        dateTime: "Aug-5th to Aug-13th ",
+        Location: "PORTUGAL",
       },
       {
         backgroundImg: "images/meru.jpg",
         nameOfCountry: "TANZANIA",
-        price: "$3025 PP",
+        price: "$770",
         dateTime: "Sep-5th to Sep-9th",
-        descriptionTitle:
-          "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
         Location: "Mount Meru",
       },
       {
@@ -73,8 +76,6 @@
         nameOfCountry: "LESOTHO & SOUTH AFRICA",
         price: "$800",
         dateTime: "Sep-20th to Sep24th",
-        descriptionTitle:
-          "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
         Location: "DrackensBurg",
       },
       {
@@ -91,8 +92,6 @@
         nameOfCountry: "KENYA",
         price: "KSH 48,900",
         dateTime: "Oct-17th to Oct-20th",
-        descriptionTitle:
-          "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
         Location: "MOUNT KENYA",
       },
       {
@@ -100,18 +99,14 @@
         nameOfCountry: "VIETNAM & THAILAND",
         price: "$4,265",
         dateTime: "Nov-1st to Nov-14th",
-        descriptionTitle:
-          "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
         Location: "THAILAND",
       },
       {
         backgroundImg: "images/place-3.jpg",
         nameOfCountry: "KENYA",
         price: "ksh 50,000",
-        dateTime: "To Be Announced",
-        descriptionTitle:
-          "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
-        Location: "THAILAND",
+        dateTime: "December",
+        Location: "NORTHERN KENYA",
       },
   ];
   
