@@ -32,7 +32,7 @@
     {
         backgroundImg: "images/lolldaiga.jpg",
         nameOfCountry: "KENYA",
-        price: "KSH 53,000",
+        price: "ksh 53,000",
         dateTime: "May-31st to June-2nd",
         Location: "Lolldaiga",
       },
@@ -90,7 +90,7 @@
       {
         backgroundImg: "images/kenya.jpeg",
         nameOfCountry: "KENYA",
-        price: "KSH 48,900",
+        price: "ksh 48,900",
         dateTime: "Oct-17th to Oct-20th",
         Location: "MOUNT KENYA",
       },
