@@ -10606,6 +10606,40 @@ h5,
     display: none;
   }
 }
+
+.button-area > .label-title {
+  display: flex;
+  text-align: center;
+  margin-right: 25px;
+  color: #000000;
+  border: none;
+  border: 1px solid #f9ab30;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 18px;
+  padding-right: 18px;
+  background: #f9ab30;
+  margin-top: 0.5rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.button-area > .label-title > .button-link:hover {
+  color: black;
+}
+
+.button-link {
+  color: #fff;
+}
+
+.button-area {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
   color: #fff;
   border: 1px solid #f9ab30;
