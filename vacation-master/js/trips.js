@@ -25,10 +25,8 @@
     {
       backgroundImg: "images/moroco.jpg",
       nameOfCountry: "MOROCCO",
-      price: "$3025",
-      dateTime: "April: 5th -16th ",
-      descriptionTitle:
-        "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
+      price: "$3,025",
+      dateTime: "April: 5th-16th ",
       Location: "MOUNT TOUBKAL",
     },
     {
@@ -36,8 +34,6 @@
         nameOfCountry: "KENYA",
         price: "KSH 53,000",
         dateTime: "May-31st to June-2nd",
-        descriptionTitle:
-          "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
         Location: "Lolldaiga",
       },
       {
@@ -45,8 +41,6 @@
         nameOfCountry: "PERU",
         price: "$5740",
         dateTime: "June-15 to June-29th ",
-        descriptionTitle:
-          "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
         Location: "Machu Pic-Chu",
       },
       {
@@ -54,8 +48,6 @@
         nameOfCountry: "UGANDA",
         price: "$2090",
         dateTime: "July-12th to July-17th ",
-        descriptionTitle:
-          "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
         Location: "GORILLA TRACKING",
       },
       {
