@@ -10607,7 +10607,7 @@ h5,
   }
 }
 
-.button-area > .label-title {
+.label-title > button {
   display: flex;
   text-align: center;
   margin-right: 25px;
@@ -10631,13 +10631,13 @@ h5,
   height: 130px;
 }
 
-.button-area > .label-title > .button-link:hover {
+.button-area > .button-link:hover {
   color: black;
 }
 
-.button-link {
+/* .button-link {
   color: #fff;
-}
+} */
 
 .button-area {
   display: flex;
