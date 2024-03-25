@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Website Development</title>
+    <title>Mountain Slayers</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -182,19 +182,24 @@
     <br />
     <section class="ftco-section ftco-no-pt">
       <div class="container text-center col-md-12 heading-section ftco-animate">
+        <!-- Button Area -->
         <div class="button-area">
           <button class="label-title">
-            <a href="#" class="button-link">International Trips</a>
+            <a
+              href="#"
+              class="button-link international-filter"
+              id="international-button"
+              >International</a
+            >
           </button>
           <button class="label-title">
-            <a href="#" class="button-link">Local Trips Now</a>
+            <a href="#" class="button-link" id="local-button">Local </a>
           </button>
         </div>
         <p>
           Down Below you can choose the Trips that you want to participate, both
           Local
         </p>
-
         <!-- Pull the data Here -->
       </div>
     </section>
@@ -207,204 +212,7 @@
             <h2 class="mb-4">International Hikes</h2>
           </div>
         </div>
-        <div class="row" id="upcomingTrip">
-          <!-- <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img br br br"
-                style="background-image: url(images/kenya.jpeg)"
-              ></a>
-              <div class="text p-4">
-                <span class="price">$200/person</span>
-                <span class="days">8 Days Tour</span>
-                <h3><a href="#">Kenya</a></h3>
-                <p class="location"><span class="ion-ios-map"></span> Nyeri</p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-mountains"></span>Near Mountain</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img br"
-                style="background-image: url(images/Ruwenzori.jpg)"
-              ></a>
-              <div class="text p-4">
-                <span class="price">$300/person</span>
-                <span class="days">10 Days Tour</span>
-                <h3><a href="#">Ruwenzori</a></h3>
-                <p class="location"><span class="ion-ios-map"></span> Uganda</p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img br"
-                style="background-image: url(images/destination-3.jpg)"
-              ></a>
-              <div class="text p-4">
-                <span class="price">$300/person</span>
-                <span class="days">7 Days Tour</span>
-                <h3><a href="#">Mt Kilimanjaro</a></h3>
-                <p class="location">
-                  <span class="ion-ios-map"></span> Tanzania, Moshi
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img br"
-                style="background-image: url(images/toubkal.jpg)"
-              ></a>
-              <div class="text p-4">
-                <span class="price">$300/person</span>
-                <span class="days">8 Days Tour</span>
-                <h3><a href="#">Toubkal</a></h3>
-                <p class="location">
-                  <span class="ion-ios-map"></span> Morocco, Atlas
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img br"
-                style="background-image: url(images/lolldaiga.jpg)"
-              ></a>
-              <div class="text p-4">
-                <span class="price">$300/person</span>
-                <span class="days">10 Days Tour</span>
-                <h3><a href="#">Kenya</a></h3>
-                <p class="location">
-                  <span class="ion-ios-map"></span> Lolldaiga, Hill
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img br"
-                style="background-image: url(images/blanc.webp)"
-              ></a>
-              <div class="text p-4">
-                <span class="price">$300/person</span>
-                <span class="days">7 Days Tour</span>
-                <h3><a href="#">Blanc</a></h3>
-                <p class="location">
-                  <span class="ion-ios-map"></span> Western Alps
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img br"
-                style="background-image: url(images/machu.jpg)"
-              ></a>
-              <div class="text p-4">
-                <span class="price">$300/person</span>
-                <span class="days">8 Days Tour</span>
-                <h3><a href="#">Machu, Picchu</a></h3>
-                <p class="location">
-                  <span class="ion-ios-map"></span> Cordillera, Peru
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-mountains"></span>Near Mountain</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img br"
-                style="background-image: url(images/gorilla.jpg)"
-              ></a>
-              <div class="text p-4">
-                <span class="price">$300/person</span>
-                <span class="days">10 Days Tour</span>
-                <h3><a href="#">Gorilla Tracking</a></h3>
-                <p class="location">
-                  <span class="ion-ios-map"></span> Uganda,
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img br"
-                style="background-image: url(images/destination-9.jpg)"
-              ></a>
-              <div class="text p-4">
-                <span class="price">$300/person</span>
-                <span class="days">7 Days Tour</span>
-                <h3><a href="#">Bali, Indonesia</a></h3>
-                <p class="location">
-                  <span class="ion-ios-map"></span> Bali, Indonesia
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
-        </div>
+        <div class="row" id="upcomingTrip"></div>
         <!-- Pagination -->
         <!-- <div class="row mt-5">
           <div class="col text-center">

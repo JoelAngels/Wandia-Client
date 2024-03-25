@@ -1,25 +1,3 @@
-{/* <div class="col-md-4 ftco-animate">
-<div class="project-wrap">
-  <a
-    href="#"
-    class="img br br br"
-    style="background-image: url(images/kenya.jpeg)"
-  ></a>
-  <div class="text p-4">
-    <span class="price">$200/person</span>
-    <span class="days">8 Days Tour</span>
-    <h3><a href="#">Kenya</a></h3>
-    <p class="location"><span class="ion-ios-map"></span> Nyeri</p>
-    <ul>
-      <li><span class="flaticon-shower"></span>2</li>
-      <li><span class="flaticon-king-size"></span>3</li>
-      <li><span class="flaticon-mountains"></span>Near Mountain</li>
-    </ul>
-  </div>
-</div>
-</div> */}
-
-
 
  const cards = [
     {
@@ -28,6 +6,7 @@
       price: "$3,025",
       dateTime: "April: 5th-16th ",
       Location: "MOUNT TOUBKAL",
+      local: false
     },
     {
         backgroundImg: "images/lolldaiga.jpg",
@@ -35,6 +14,7 @@
         price: "ksh 53,000",
         dateTime: "May-31st to June-2nd",
         Location: "Lolldaiga",
+        local: true
       },
       {
         backgroundImg: "images/machu.jpg",
@@ -42,6 +22,7 @@
         price: "$5,740",
         dateTime: "June-15 to June-29th ",
         Location: "MACHU PIC-CHU",
+        local: false
       },
       {
         backgroundImg: "images/gorilla.jpg",
@@ -49,6 +30,7 @@
         price: "$2,090",
         dateTime: "July-12th to July-17th",
         Location: "GORILLA TRACKING",
+        local: false,
       },
       {
         backgroundImg: "images/blanc.webp",
@@ -56,6 +38,7 @@
         price: "$2,170",
         dateTime: "31-July to August-5th ",
         Location: "MOUNT BLANC",
+        local: false
       },
       {
         backgroundImg: "images/portugal.avif",
@@ -63,6 +46,7 @@
         price: "$3,100",
         dateTime: "Aug-5th to Aug-13th ",
         Location: "PORTUGAL",
+        local: false
       },
       {
         backgroundImg: "images/meru.jpg",
@@ -70,6 +54,7 @@
         price: "$770",
         dateTime: "Sep-5th to Sep-9th",
         Location: "Mount Meru",
+        local: false
       },
       {
         backgroundImg: "images/drakensberg.jpeg",
@@ -77,6 +62,7 @@
         price: "$800",
         dateTime: "Sep-20th to Sep24th",
         Location: "DrackensBurg",
+        local: false
       },
       {
         backgroundImg: "images/capetown.jpeg",
@@ -86,6 +72,7 @@
         descriptionTitle:
           "We believe everyone — even our little ones — should get a chance to experience the peace, freedom, and healing of the great outdoors; that’s why we restructured the William Hill hike to make it more child-friendly. Our William Hill hike starts at the base of the Kikuyu escarpment, 7.5 km off the Mai Mahiu highway. The hike starts with an initial 1.5 km gentle trek before taking a 2 km ascent up the Kikuyu escarpment. The hike ends back at the starting point, covering a total of approximately 7 km.",
         Location: "CAPE TOWN",
+        local: false
       },
       {
         backgroundImg: "images/kenya.jpeg",
@@ -93,6 +80,7 @@
         price: "ksh 48,900",
         dateTime: "Oct-17th to Oct-20th",
         Location: "MOUNT KENYA",
+        local: true
       },
       {
         backgroundImg: "images/place-3.jpg",
@@ -100,6 +88,7 @@
         price: "$4,265",
         dateTime: "Nov-1st to Nov-14th",
         Location: "THAILAND",
+        local: false
       },
       {
         backgroundImg: "images/place-3.jpg",
@@ -107,40 +96,72 @@
         price: "ksh 50,000",
         dateTime: "December",
         Location: "NORTHERN KENYA",
+        local: true
       },
   ];
   
 const tripElement = document.getElementById("upcomingTrip") 
 const tripArrayElement = document.getElementById("upcomingTrip") 
+const internationalButton = document.getElementById("international-button")
+const localButton = document.getElementById("local-button")
 
-let tripHtml = "";
 
-cards.forEach(card => {
-  tripHtml += `
-    <div class="col-md-4 ftco-animate">
-      <div class="project-wrap">
-        <a
-          href="#"
-          class="img br br br"
-          style="background-image: url(${card.backgroundImg})"
-        ></a>
-        <div class="text p-4">
-          <span class="price">${card.price}/person</span>
-          <span class="days">8 Days Tour</span>
-          <h3><a href="#">${card.nameOfCountry}</a></h3>
-          <p class="location"><span class="ion-ios-map"></span> ${card.Location}</p>
-          <p class="location"><span class="ion-ios-map"></span> ${card.dateTime}</p>
-          <ul>
-            <li><span class="flaticon-shower"></span>2</li>
-            <li><span class="flaticon-king-size"></span>3</li>
-            <li><span class="flaticon-mountains"></span>Near Mountain</li>
-          </ul>
+
+
+const init = (filterBy, element)=>{
+  let tripHtml = "";
+  cards.filter(card=> card.local === filterBy).forEach(card => {
+
+    // ftco-animate  visibility hidden, opacity 0
+    // i removed the class above from the dice below
+    tripHtml += `
+      <div class="col-md-4 ">
+        <div class="project-wrap">
+          <a
+            href="#"
+            class="img br br br"
+            style="background-image: url(${card.backgroundImg})"
+          ></a>
+          <div class="text p-4">
+            <span class="price">${card.price}/person</span>
+            <span class="days">8 Days Tour</span>
+            <h3><a href="#">${card.nameOfCountry}</a></h3>
+            <p class="location"><span class="ion-ios-map"></span> ${card.Location}</p>
+            <p class="location"><span class="ion-ios-map"></span> ${card.dateTime}</p>
+            <ul>
+              <li><span class="flaticon-shower"></span>2</li>
+              <li><span class="flaticon-king-size"></span>3</li>
+              <li><span class="flaticon-mountains"></span>Near Mountain</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  `;
-});
+    `;
+  });
+  
+  element.innerHTML = tripHtml  
+  // element.classList.add("test")
+  // element.classList.remove("test")
+ 
+}
 
-tripElement.innerHTML = tripHtml    
+localButton.addEventListener("click", (e)=>{
+  e.preventDefault()
+  const isLocal = true
+  init(isLocal, tripElement)
+})
+
+internationalButton.addEventListener("click", (e)=>{
+  e.preventDefault()
+  // constLocal = false
+  const isLocal = false
+  init(isLocal, tripElement)
+})
+
+
+document.addEventListener("DOMContentLoaded", ()=>{
+  const isLocal = false
+  init(isLocal, tripElement)
+})
 
 
