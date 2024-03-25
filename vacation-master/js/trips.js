@@ -116,13 +116,13 @@ const init = (filterBy, element)=>{
     // ftco-animate  visibility hidden, opacity 0
     // i removed the class above from the dice below
     tripHtml += `
-      <div class="col-md-4 "> 
+      <div class="col-md-4"> 
         <div class="project-wrap">
-          <a
+          <div
             href="#"
-            class="img br br br"
+            class="img br"
             style="background-image: url(${card.backgroundImg})"
-          ></a>
+          ></div>
           <div class="text p-4">
             <span class="price">${card.price}/person</span>
             <span class="days">8 Days Tour</span>
@@ -146,6 +146,8 @@ const init = (filterBy, element)=>{
  
 }
 
+// Filter for Local
+
 localButton.addEventListener("click", (e)=>{
   e.preventDefault()
   const isLocal = true
@@ -153,6 +155,7 @@ localButton.addEventListener("click", (e)=>{
   titleButton.textContent = "Local Hikes"
 })
 
+// Filter for International
 internationalButton.addEventListener("click", (e)=>{
   e.preventDefault()
   // constLocal = false
@@ -161,6 +164,7 @@ internationalButton.addEventListener("click", (e)=>{
   titleButton.textContent = "International Hikes"
 })
 
+// Initially show all trips (or adjust as needed)
 
 document.addEventListener("DOMContentLoaded", ()=>{
   const isLocal = false
@@ -168,5 +172,45 @@ document.addEventListener("DOMContentLoaded", ()=>{
 })
 
 
+// Handle card click event (assuming cards are within tripElement with class "project-wrap")
+tripElement.addEventListener("click", (event) => {
+  if (event.target.classList.contains("project-wrap")) {
+    const clickedCard = event.target;
+    const cardInfoString = clickedCard.dataset.cardInfo; // Get card data from data attribute
 
+    // Error handling: Check if cardInfoString is available and valid JSON
+    if (cardInfoString && cardInfoString.trim() !== "") {
+      try {
+        const cardInfo = JSON.parse(cardInfoString);
 
+        // Create a new window with the card details (modify HTML as needed)
+        const newWindow = window.open("", "_blank");
+        newWindow.document.write(`
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <title>${cardInfo.nameOfCountry} Hike Details</title>
+          </head>
+          <body>
+            <h1>${cardInfo.nameOfCountry} Hike</h1>
+            <img src="${cardInfo.backgroundImg}" alt="${cardInfo.nameOfCountry} Hike Image">
+            <p>Price: ${cardInfo.price}/person</p>
+            <p>Duration: 8 Days Tour</p>
+            <p>Location: ${cardInfo.Location}</p>
+            <p>Date & Time: ${cardInfo.dateTime}</p>
+            ${cardInfo.descriptionTitle ? `<p>Description: ${cardInfo.descriptionTitle}</p>` : ""}
+          </body>
+          </html>
+        `);
+        newWindow.document.close(); // Close the document to prevent further modifications
+      } catch (error) {
+        console.error("Error parsing card info:", error);
+        // Handle the error gracefully (e.g., display an error message to the user)
+      }
+    } else {
+      console.warn("Card data not found or invalid format.");
+      // Handle the case where card data is missing or not in JSON format
+    }
+  }
+});
