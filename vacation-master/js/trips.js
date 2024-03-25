@@ -104,6 +104,7 @@ const tripElement = document.getElementById("upcomingTrip")
 const tripArrayElement = document.getElementById("upcomingTrip") 
 const internationalButton = document.getElementById("international-button")
 const localButton = document.getElementById("local-button")
+const titleButton = document.getElementById("title-button")
 
 
 
@@ -115,7 +116,7 @@ const init = (filterBy, element)=>{
     // ftco-animate  visibility hidden, opacity 0
     // i removed the class above from the dice below
     tripHtml += `
-      <div class="col-md-4 ">
+      <div class="col-md-4 "> 
         <div class="project-wrap">
           <a
             href="#"
@@ -149,6 +150,7 @@ localButton.addEventListener("click", (e)=>{
   e.preventDefault()
   const isLocal = true
   init(isLocal, tripElement)
+  titleButton.textContent = "Local Hikes"
 })
 
 internationalButton.addEventListener("click", (e)=>{
@@ -156,6 +158,7 @@ internationalButton.addEventListener("click", (e)=>{
   // constLocal = false
   const isLocal = false
   init(isLocal, tripElement)
+  titleButton.textContent = "International Hikes"
 })
 
 
@@ -163,5 +166,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
   const isLocal = false
   init(isLocal, tripElement)
 })
+
+
 
 
