@@ -29,7 +29,21 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "wyeQUjRPPQL9Xvvb8",
+        });
+      })();
+    </script>
+    <script src="js/email.js"></script> -->
   </head>
+
   <body>
     <div class="whatsapp">
       <a
@@ -88,6 +102,7 @@
     </nav>
     <!-- END nav -->
 
+    <!-- Background picture + animation -->
     <section
       class="hero-wrap hero-wrap-2 js-fullheight"
       style="background-image: url('images/contact-us.jpg')"
@@ -111,7 +126,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Brief Contact Info -->
     <section class="ftco-section ftco-no-pb contact-section">
       <div class="container">
         <div class="row d-flex contact-info">
@@ -167,40 +182,59 @@
       <div class="container">
         <div class="row block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-5 contact-form" method="POST">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="bg-light p-5 contact-form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="2eab755d-3f17-426e-ae0c-0ad28f7a1b6a"
+              />
               <div class="form-group">
                 <input
-                  type="text"
+                  name="name"
                   class="form-control"
-                  placeholder="Your Name"
+                  placeholder="Full Name"
+                  required
                 />
               </div>
               <div class="form-group">
                 <input
-                  type="text"
+                  name="email"
+                  type="email"
                   class="form-control"
                   placeholder="Your Email"
+                  required
                 />
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" />
+                <input
+                  name="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                  required
+                />
               </div>
               <div class="form-group">
                 <textarea
-                  name=""
-                  id=""
+                  name="message"
                   cols="30"
                   rows="7"
                   class="form-control"
                   placeholder="Message"
+                  required
                 ></textarea>
               </div>
               <div class="form-group">
-                <input
+                <button
                   type="submit"
                   value="Send Message"
                   class="btn btn-primary py-3 px-5"
-                />
+                >
+                  Send
+                </button>
               </div>
             </form>
           </div>
@@ -340,6 +374,7 @@
       </svg>
     </div>
 
+    <script src="js/email.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
