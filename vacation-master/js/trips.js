@@ -174,43 +174,27 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 // Handle card click event (assuming cards are within tripElement with class "project-wrap")
 tripElement.addEventListener("click", (event) => {
+  console.log("click")
   if (event.target.classList.contains("project-wrap")) {
-    const clickedCard = event.target;
-    const cardInfoString = clickedCard.dataset.cardInfo; // Get card data from data attribute
+      const clickedCard = event.target;
+      const cardInfoString = clickedCard.dataset.cardInfo; // Get card data from data attribute
 
-    // Error handling: Check if cardInfoString is available and valid JSON
-    if (cardInfoString && cardInfoString.trim() !== "") {
-      try {
-        const cardInfo = JSON.parse(cardInfoString);
+      // Error handling and data processing logic here (same as before)
 
-        // Create a new window with the card details (modify HTML as needed)
-        const newWindow = window.open("", "_blank");
-        newWindow.document.write(`
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <title>${cardInfo.nameOfCountry} Hike Details</title>
-          </head>
-          <body>
-            <h1>${cardInfo.nameOfCountry} Hike</h1>
-            <img src="${cardInfo.backgroundImg}" alt="${cardInfo.nameOfCountry} Hike Image">
-            <p>Price: ${cardInfo.price}/person</p>
-            <p>Duration: 8 Days Tour</p>
-            <p>Location: ${cardInfo.Location}</p>
-            <p>Date & Time: ${cardInfo.dateTime}</p>
-            ${cardInfo.descriptionTitle ? `<p>Description: ${cardInfo.descriptionTitle}</p>` : ""}
-          </body>
-          </html>
-        `);
-        newWindow.document.close(); // Close the document to prevent further modifications
-      } catch (error) {
-        console.error("Error parsing card info:", error);
-        // Handle the error gracefully (e.g., display an error message to the user)
+      if (cardInfoString && cardInfoString.trim() !== "") {
+          try {
+              const cardInfo = JSON.parse(cardInfoString);
+
+              // Redirect to a new card detail page (replace with your actual redirection logic)
+              window.location.href = "carddetail.html?" + new URLSearchParams({ cardInfo: cardInfoString });
+
+          } catch (error) {
+              console.error("Error parsing card info:", error);
+              // Handle the error gracefully
+          }
+      } else {
+          console.warn("Card data not found or invalid format.");
+          // Handle the case where card data is missing or not in JSON format
       }
-    } else {
-      console.warn("Card data not found or invalid format.");
-      // Handle the case where card data is missing or not in JSON format
-    }
   }
 });
