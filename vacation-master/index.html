@@ -37,8 +37,40 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 20px;
+        z-index: 100;
+      }
+      .whatsapp .whatsapp-btn span {
+        position: absolute;
+        top: -4px;
+        left: 4px;
+        font-weight: bold;
+      }
+      .chat {
+        position: relative;
+        top: 10px;
+      }
+    </style>
   </head>
+
   <body>
+    <!-- Whatsapp Icon -->
+    <div class="whatsapp">
+      <a
+        href="https://wa.me/254719830090?text=Thank you for reaching out to us, how can we help you enjoy your trip"
+        target="_blank"
+        class="whatsapp-btn"
+      >
+        <img src="./images/whatsapp.png" width="50" alt="#" />
+        <span>Contact Us</span>
+      </a>
+    </div>
+    <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
       id="ftco-navbar"
