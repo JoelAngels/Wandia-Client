@@ -152,7 +152,7 @@ localButton.addEventListener("click", (e)=>{
   e.preventDefault()
   const isLocal = true
   init(isLocal, tripElement)
-  titleButton.textContent = "Local Hikes"
+  titleButton.textContent = "Local Trips"
 })
 
 // Filter for International
@@ -161,7 +161,7 @@ internationalButton.addEventListener("click", (e)=>{
   // constLocal = false
   const isLocal = false
   init(isLocal, tripElement)
-  titleButton.textContent = "International Hikes"
+  titleButton.textContent = "International Trips"
 })
 
 // Initially show all trips (or adjust as needed)
