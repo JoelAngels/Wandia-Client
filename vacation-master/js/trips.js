@@ -186,7 +186,7 @@ tripElement.addEventListener("click", (event) => {
               const cardInfo = JSON.parse(cardInfoString);
 
               // Redirect to a new card detail page (replace with your actual redirection logic)
-              window.location.href = "carddetail.html?" + new URLSearchParams({ cardInfo: cardInfoString });
+              window.location.href = "cardDetail.html?" + new URLSearchParams({ cardInfo: cardInfoString });
 
           } catch (error) {
               console.error("Error parsing card info:", error);
