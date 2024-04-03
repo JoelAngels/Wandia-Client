@@ -91,6 +91,14 @@ body {
   left: 4px;
   font-weight: bold;
 }
+
+.container .detail {
+  line-height: 1.8;
+  font-size: 18px;
+  color: #999999;
+  font-weight: 400;
+}
+
 .chat {
   position: relative;
   top: 10px;

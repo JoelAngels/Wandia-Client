@@ -91,7 +91,7 @@
       </div>
     </div>
   </section>
-
+  <!-- U -->
   <section class="ftco-section">
     <div class="container">
       <div class="row justify-content-center pb-4">
@@ -150,14 +150,46 @@
   <br />
 
   <!-- Tour Destination -->
-  <h1>Trip Name: <span id="trip-name"></span></h1>
-<p>Price: <span id="trip-price"></span></p>
-<p>Location: <span id="trip-location"></span></p>
-<p>Date and Time: <span id="trip-date-time"></span></p>
-<p>Distance: <span id="trip-distance"></span></p>
+  <!-- <div class="ftco-section ftco-no-pt"> -->
+  <div class="container">
+    <h1 class="mb-4 text-center">Trip Name: <span id="trip-name"></span></h1>
+    <h4>Price: <span  class = "detail" id="trip-price"></span>
+    </h4>
+    <h4>Location: <span class = "detail" id="trip-location"></span></h4>
+    <h4>Date and Time: <span class = "detail" id="trip-date-time"></span></h4>
+    <h4>Distance: <span class = "detail" id="trip-distance"></span></h4>
+    <p class = "text-center">
+      <a href="contact.html" class="btn btn-primary py-3 px-4"
+        >Click To Register Payment</a
+      >
+    </p>
+    <h1 class="text-center ">How to prepare for the Hike</h1>
+  
+    <ul>
+      <li>Engage in active cardio exercises such as aerobics, walking, running, cycling, and swimming the week prior to
+        the event.</li>
+      <li>Set aside the day before the hike for resting—take a break from exercises.</li>
+      <li>Increase your hydration at least two days leading up to the hike.</li>
+      <li>Aim to get enough rest the night before the hike.</li>
+      <li>If on intermittent fasting or a diet, take a break one day before and after the hike to build up your energy
+        reserves.</li>
+      <li>Cut your toenails!</li>
+      <li>Have a generous breakfast at least 3 hours before the start of the hike for sustained energy.</li>
+      <li>Use the bathroom before leaving the house to avoid bathroom breaks on the commute.</li>
+      <li>Set your mind up for conquering yourself. Hiking is more about mindset than physical preparation. Believe in
+        yourself! You can do it!</li>
+    </ul>
+    
+    <p class = "text-center">
+      <a href="contact.html" class="btn btn-primary py-3 px-4 "
+        >Join Our Whatsapp Community</a
+      >
+    </p>
+  </div>
+  <!-- </div> -->
 
   <script>
-   const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(window.location.search);
     const cardId = urlParams.get("cardId");
     const cardsData = JSON.parse(decodeURIComponent(urlParams.get("cards")));
 
@@ -178,22 +210,6 @@
       document.body.innerHTML = "Trip details not found.";
     }
   </script>
-  <!-- <script>
-    const tripId = urlParams.get('tripId');
-
-    const trip = cards.find(card => card.id === parseInt(tripId, 10));
-
-    if (trip) {
-      // Display trip details
-      document.getElementById('trip-name').textContent = trip.nameOfCountry;
-      // Continue setting other elements
-    } else {
-      // Handle case where no trip matches the given id
-      console.error('Trip not found');
-    }
-  </script> -->
-
-
   </div>
   </section>
 
