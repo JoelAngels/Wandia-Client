@@ -132,7 +132,7 @@ const init = (filterBy, element) => {
             href="#"
             class="img br"
             style="background-image: url(${card.backgroundImg})"
-            data-card-id="${card.id}">
+            data-card-id="${card.id}"
           ></a>
           <div class="text p-4">
             <span class="price">${card.price}/person</span>
